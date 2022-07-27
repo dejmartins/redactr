@@ -9,12 +9,12 @@ let replacement = "*";
 
 //More information
 let numberOfWordsScrambled = toScramble.length;
-let numberOfscrambledCharacters = 0;
+let numberOfScrambledCharacters = 0;
 
 //Replace process
 for (word of toScramble) {
   if (sentence.includes(word)) {
-    numberOfscrambledCharacters += word.length;
+    numberOfScrambledCharacters += word.length;
     sentence = sentence.replace(word, replacement.repeat(word.length));
   }
 }
@@ -22,4 +22,4 @@ for (word of toScramble) {
 //Output
 console.log(sentence);
 console.log(numberOfWordsScrambled);
-console.log(numberOfscrambledCharacters);
+console.log(numberOfScrambledCharacters);
